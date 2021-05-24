@@ -12,9 +12,7 @@ When following  the guidelines you should start with get Started and keep going 
 
 | Milestone                                           | Timeline  | Action item                        |
 | --------------------------------------------------- | --------- | ---------------------------------- |
-| Getting familiar with OOP and functional Programing | 2 sprints | Research OOP and FP                |
-| Identify blocks of code as OOP and FP               | 2 sprints | Reviewing code and classify        |
-| Practice writing code in your style                 | 2 sprint  | Rewriting code to match your style |
+| Getting familiar with OOP and functional Programing | 1 week    |                                    |
 
 
 
@@ -29,7 +27,7 @@ Tabs or spaces? Curly brace on the same line or a new line? 80 character width o
 
 ### Know your Falsehoods
 
-*Falsehood* articles are a form of commentary on a particular subject, and are appreciated by the developer community at large for their effectiveness and terseness. They're a convenient written form to approach an unfamiliar domain by dispelling myths, point out common pitfalls, show inconsistencies and subtleties. Check the following Awesome list to go over common themes. 
+*Falsehood* articles are a form of commentary on a particular subject, and are appreciated by the developer community at large for their effectiveness and terseness. They're a convenient written form to approach an unfamiliar domain by dispelling myths, point out common pitfalls, show inconsistencies and subtleties. Check the following Awesome list to go over common themes.
 
 - [Awesome Falsehoods](https://github.com/kdeldycke/awesome-falsehood)
   💊 Curated list of falsehoods programmers believe in.
@@ -176,7 +174,7 @@ Tabs or spaces? Curly brace on the same line or a new line? 80 character width o
 
 
 
-# Friendly Advice	
+# Friendly Advice
 
 ### The Broken Windows Theory
 
@@ -229,9 +227,9 @@ Example: [Pure Functions](https://en.wikipedia.org/wiki/Pure_function) are great
 
 But it is not only about code. It is about the experience of all stakeholders: Users, sales people, support hotline, developers, ....
 
-It is hard work to keep it simple. 
+It is hard work to keep it simple.
 
-One think I love to do: "Increase the obviousness". 
+One think I love to do: "Increase the obviousness".
 
 One tool to get there: Use a central wiki (without spaces), and
 define terms. Related text from me: [Documentation in Intranets: My point of view](https://github.com/guettli/intranets)
@@ -245,7 +243,7 @@ define terms. Related text from me: [Documentation in Intranets: My point of vie
 
 Things are much easier to implement and predict if you just have one method call. One request and one response. You don't have an open connection and a reference to a remote object which executes on a remote server.
 
-Look at all the dated protocols which are like a human conversation between a client and a server: SMTP, IMAP, FTP, ... Nobody wants the client and the server to have a chatty dialog like this: 
+Look at all the dated protocols which are like a human conversation between a client and a server: SMTP, IMAP, FTP, ... Nobody wants the client and the server to have a chatty dialog like this:
 
 ```
 Client: My name is Bob
@@ -260,7 +258,7 @@ Client: Please show me the first message
 Server: here it is:
 Server: ....
 Client: looks like spam. Please delete this message
-Server: Now I know that you want to delete this message. 
+Server: Now I know that you want to delete this message.
 Server: But won't delete it now. Please send me EXPUNGE to execute the delete.
 Client: grrrr, this is complicated. I already told you that I want the message to be deleted.
 Client: EXPUNGE
@@ -301,7 +299,7 @@ Do the filtering in the database. In most cases it is faster then the loops in y
 
 Imagine you have three models (users, groups and permissions) as tables in a relational database system.
 
-Most systems do the permission checking via source code. Example: `if user.is_admin then return True`. 
+Most systems do the permission checking via source code. Example: `if user.is_admin then return True`.
 
 Sooner or later you need the list of items: Show all items which the current user may see.
 
@@ -313,7 +311,7 @@ That's why I think: do permission checking via SQL
 
 ### Real men use ORM
 
-[ORM (Object-relational mapping)](https://en.wikipedia.org/wiki/Object-relational_mapping) makes daily work much easier. Above heading is a stupid joke. Clever people use tools to make work simpler, more fun and more convenient. ORMs are great. 
+[ORM (Object-relational mapping)](https://en.wikipedia.org/wiki/Object-relational_mapping) makes daily work much easier. Above heading is a stupid joke. Clever people use tools to make work simpler, more fun and more convenient. ORMs are great.
 
 Some (usualy elderly) developers fear that a ORM is slower than hand-crafted and optimized SQL. Maybe there are corner cases where this prejudice is true. But that's not a reason to avoid ORMs. Just use them, and if you hit a corner case, then use raw SQL.
 
@@ -333,4 +331,3 @@ Make your live easy, use ORM.
 * [guettli](https://github.com/guettli/programming-guidelines)
 * [Hacker-Laws](https://github.com/dwmkerr/hacker-laws)
 * [mtdvio](https://github.com/mtdvio/every-programmer-should-know)
-
